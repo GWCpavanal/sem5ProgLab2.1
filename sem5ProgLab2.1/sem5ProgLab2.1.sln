@@ -1,0 +1,41 @@
+﻿using System;
+
+[XmlRoot("notepad")]
+public class Notepad
+{
+	[XmlElement("note")]
+	public List<Note> Items { get; set; }
+}
+
+public class Note
+{
+	[XmlElement("subject")]
+	public string Subject { get; set; }
+
+    [XmlElement("text")]
+    public string Text { get; set; }
+
+    [XmlElement("tel")]
+    public string Tel { get; set; }
+
+    public override string ToString()
+    {
+        return Subject;
+    }
+
+    private void Note()
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(NotePad));
+        var NotepadFromXml = new List<Note>();
+
+        using (Stream reader = new FileStream("test.xml", FileMode.Open))
+        {
+            NotepadFromXml = ((Notepad)serializer.Deserialize(reader)).Items;
+        }
+
+        foreach (var address in NotepadFromXml)
+        {
+            listBox1.Items.Add(Note);
+        }
+    }
+}
