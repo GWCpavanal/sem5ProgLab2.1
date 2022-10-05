@@ -1,0 +1,11 @@
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\bin\Debug\sem5ProgLab2.1.exe.config
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\bin\Debug\sem5ProgLab2.1.exe
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\bin\Debug\sem5ProgLab2.1.pdb
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.csproj.AssemblyReference.cache
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.csproj.SuggestedBindingRedirects.cache
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2._1.Form1.resources
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2._1.Properties.Resources.resources
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.csproj.GenerateResource.cache
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.csproj.CoreCompileInputs.cache
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.exe
+C:\Users\dafig\source\repos\sem5ProgLab2.1\sem5ProgLab2.1\obj\Debug\sem5ProgLab2.1.pdb

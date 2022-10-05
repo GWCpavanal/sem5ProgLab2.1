@@ -1,41 +1,19 @@
-﻿using System;
+﻿using static System.Net.Mime.MediaTypeNames;
+using System;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 
-[XmlRoot("notepad")]
-public class Notepad
+namespace sem5ProgLab2._1
 {
-	[XmlElement("note")]
-	public List<Note> Items { get; set; }
-}
-
-public class Note
-{
-	[XmlElement("subject")]
-	public string Subject { get; set; }
-
-    [XmlElement("text")]
-    public string Text { get; set; }
-
-    [XmlElement("tel")]
-    public string el { get; set; }
-
-    public override string ToString()
+    [XmlRoot(ElementName = "notepad")]
+    public class Notepad // класс со списком Note объектов
     {
-        return Subject;
-    }
-
-    private void Note()
-    {
-        XmlSerializer serializer = new XmlSerializer(typeof(NotePad));
-        var NotepadFromXml = new List<Note>();
-
-        using (Stream reader = new FileStream("test.xml", FileMode.Open))
-        {
-            NotepadFromXml = ((Notepad)serializer.Deserialize(reader)).Items;
-        }
-
-        foreach (var address in NotepadFromXml)
-        {
-            listBox1.Items.Add(Note);
-        }
+        [XmlElement(ElementName = "note")]
+        public List<Note> Items { get; set; }
     }
 }
+
+
+
+
+

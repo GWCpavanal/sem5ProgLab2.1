@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<notepad>
+    <note id="1" date="12/04/99" time="13:40">
+        <subject> Важная деловая встреча </subject>
+        <text> Надо встретиться с Иваном Ивановичем, предваритильно позвонив ему по телефону <tel>123-12-12</tel>
+        </text>
+    </note>
+    <note id="2" date="12/04/99" time="13:58">
+        <subject> Позвонить домой </subject>
+        <text>
+        ты гей!
+            <tel>124-13-13</tel>
+        </text>
+    </note>
+</notepad>
