@@ -18,11 +18,17 @@ namespace sem5ProgLab2._1
         public Form1()
         {
             InitializeComponent();
-            openFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
-            saveFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
             Note();
         }
-        
+
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+                propertyGrid1.SelectedObject = listBox1.SelectedItem;
+            }
+        }
+
         private void Note()
         {
             var serializer = new XmlSerializer(typeof(Notepad));
@@ -39,31 +45,7 @@ namespace sem5ProgLab2._1
             }
         }
 
-        private void button_saveFile_Click(object sender, EventArgs e)
-        {
-            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
-                return;
-            // получаем выбранный файл
-            string filename = saveFileDialog1.FileName;
-            // сохраняем текст в файл
-            System.IO.File.WriteAllText(filename, richTextBox1.Text);
-            MessageBox.Show("Файл сохранен");
-
-        }
-
-        private void button_openFile_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
-                return;
-            // получаем выбранный файл
-            string filename = openFileDialog1.FileName;
-            // читаем файл в строку
-            string fileText = System.IO.File.ReadAllText(filename);
-            richTextBox1.Text = fileText;
-            MessageBox.Show("Файл открыт");
-        }
-        
-        #region для переноса текста в listbox на след строку
+        #region для переноса текста в listbox на след строку  (теперь без этого не отображаются объекты в listbox)
         private void lst_MeasureItem(object sender, MeasureItemEventArgs e)
         {
             e.ItemHeight = (int)e.Graphics.MeasureString(listBox1.Items[e.Index].ToString(), listBox1.Font, listBox1.Width).Height;
@@ -79,9 +61,6 @@ namespace sem5ProgLab2._1
             }
         }
         #endregion
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
 
-        }
     }
 }

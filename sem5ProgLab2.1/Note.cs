@@ -16,8 +16,8 @@ namespace sem5ProgLab2._1
 
         public override string ToString()
         {
-            return $"{""} {text};" +
-                   $"{nameof(Tel)}:{Tel}; " ;
+            string res = text + " Tel: " + Tel;
+            return res;
         }
     }
 
@@ -41,11 +41,7 @@ namespace sem5ProgLab2._1
 
         public override string ToString()
         {
-            return $"{nameof(Id)}:{Id}; " +
-                   $"{"Дата"}:{Date}; " +
-                   $"{"Время"}:{Time}; " +
-                   $"{"Тема"}:{Subject}; " +
-                   $"{nameof(text)}:{text} ";
+            return Subject;
         }
     }
 }
